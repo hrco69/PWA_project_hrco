@@ -17,7 +17,7 @@
   <?php include './subtabs/navigacija.php'; ?>
   <div class="top-bar">
     <div class="red-text">World</div>
-    <?php if(isset($_SESSION["isAdmin"])): ?>
+    <?php if(isset($_SESSION["isAdmin"]) and $_SESSION["isAdmin"]): ?>
       <a href="admin-edits.php" class="green-button">Add News</a>
     <?php endif; ?>
   </div>

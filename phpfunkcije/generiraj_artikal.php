@@ -16,7 +16,7 @@
         </a>
       </div>
       <h2><?= $articlePart["title"] ?></h2>
-      <?php if(isset($_SESSION["isAdmin"])): ?>
+      <?php if(isset($_SESSION["isAdmin"]) and $_SESSION["isAdmin"]): ?>
         <form action="#" method="POST">
                 <button class="deletebtn" name="deleteBtn" value="<?= $articlePart["id"] ?>">Delete</button>
         </form>

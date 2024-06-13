@@ -20,7 +20,7 @@
     </div>
     <div class="username">
       <?php
-        if(isset($_SESSION["isAdmin"]) and $_SESSION["isAdmin"]){
+        if(isset($_SESSION["username"]) and $_SESSION["username"]){
           echo "Welcome, " . $_SESSION["username"];
         }
         else{
