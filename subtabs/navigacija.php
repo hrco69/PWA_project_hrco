@@ -18,9 +18,6 @@
       echo getCurrentDate();
       ?>
     </div>
-
-    
-
     <div class="username">
       <?php
         if(isset($_SESSION["isAdmin"]) and $_SESSION["isAdmin"]){

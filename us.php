@@ -19,7 +19,9 @@
   <?php include './subtabs/navigacija.php'; ?>
   <div class="top-bar">
   <div class="red-text">U.S.</div>
+  <?php if(isset($_SESSION["isAdmin"])): ?>
   <a href="admin-edits.php" class="green-button">Add News</a>
+  <?php endif; ?>
   </div>
   <hr class="dotted-line">
   <div class="news-container">

@@ -18,12 +18,13 @@
 
 </head>
 <body>
-
+    
     <div>
         <?php include './subtabs/navigacija.php'; ?>
-    </div>
-    <div class="red-text">U.S.</div>
-
+        </div>
+        <div class="red-text">U.S.</div>
+     
+        
 
             
         <div class="news-container">
