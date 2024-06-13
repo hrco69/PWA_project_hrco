@@ -1,0 +1,90 @@
+/*napravi da globalno podrucije dokumenta bude cintriano i na 80% sirine*/
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.banner {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center; /* Dodano: centriranje sadržaja */
+  margin: 0 auto; /* Dodano: centriranje na sredinu ekrana */
+  max-width: 100%; /* Dodano: ograničavanje širine */
+}
+
+.navigation {
+  background-color: lightgray;
+  padding: 10px;
+  display: flex; /* Dodano: peering */
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+  justify-content: space-around; /* Dodano: jednako udaljeni elementi */
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px; /* Povećanje naslova na 24px */
+  font-weight: bold; /* Podebljavanje slova */
+
+  display: inline;
+  margin-right: 80px;
+  flex: 1; /* Dodano: elementi zauzimaju jednaku širinu */
+}
+
+.banner {
+  position: relative;
+}
+
+.current-date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.username {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+/*zadnji li ne prikazuje*/
+/* .navigation ul li:last-child {
+  display: none;
+} */
+
+/* napravi za 888pxela prikaz za mobitel da se navigacija cijela prilagodi i promijeni da se listaji itemi jedan ispod drugoga*/
+@media (max-width: 888px) {
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navigation ul li {
+    display: block;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .navigation ul li a {
+    margin-right: 0;
+    flex: 1;
+    width: 100%;
+  }
+}

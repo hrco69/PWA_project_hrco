@@ -1,0 +1,75 @@
+body {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: left;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.news {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  margin: 10px;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.news h2 {
+  margin: 15px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.news .deletebtn {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  padding: 10px 15px;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.news .deletebtn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 888px) {
+  .news {
+    width: 100%;
+  }
+}
